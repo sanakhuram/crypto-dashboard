@@ -1,5 +1,7 @@
 
 # 🪙 Crypto Dashboard
+![image](https://github.com/user-attachments/assets/914ff4a0-a3a2-4973-9843-1dc6c0e6a2e0) ![image](https://github.com/user-attachments/assets/f229283c-3b45-4bfd-a9dd-4287ff8efc95)
+
 
 ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white&style=for-the-badge)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
