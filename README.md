@@ -95,5 +95,5 @@ This project is open source and available under the [MIT License](LICENSE).
 Built with ❤️ by **Sana Khuram**
 
 - [GitHub](https://github.com/sanakhuram)
-- [Portfolio](https://sanakhuram.netlify.app/)
-- [LinkedIn](https://www.linkedin.com/in/your-linkedin/) *(Optional)*
+- [Portfolio](https://skhuram.netlify.app/)
+
