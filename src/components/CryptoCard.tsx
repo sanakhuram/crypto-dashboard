@@ -7,10 +7,12 @@ type Crypto = {
   image: string;
   current_price: number;
   market_cap: number;
-  price_change_percentage_24h: number;
+  price_change_percentage_24h: number | null;
 };
 
 export function CryptoCard({ crypto }: { crypto: Crypto }) {
+  const change24h = crypto.price_change_percentage_24h;
+
   return (
     <Link href={`/coin/${crypto.id}`}>
       <div className="border border-teal-900 rounded-lg shadow-lg p-4 hover:shadow-xl shadow-teal-600 transition space-y-2">
@@ -30,8 +32,18 @@ export function CryptoCard({ crypto }: { crypto: Crypto }) {
 
         <p>💰 Price: ${crypto.current_price.toLocaleString()}</p>
         <p>📊 Market Cap: ${crypto.market_cap.toLocaleString()}</p>
-        <p className={crypto.price_change_percentage_24h > 0 ? 'text-green-600' : 'text-red-600'}>
-          24h: {crypto.price_change_percentage_24h.toFixed(2)}%
+
+        <p
+          className={
+            typeof change24h === 'number' && change24h > 0
+              ? 'text-green-600'
+              : 'text-red-600'
+          }
+        >
+          24h:{' '}
+          {typeof change24h === 'number'
+            ? `${change24h.toFixed(2)}%`
+            : 'N/A'}
         </p>
       </div>
     </Link>
